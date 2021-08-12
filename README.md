@@ -1,5 +1,5 @@
 # OBCRP
-A discord rich presence utility for websites
+A discord rich presence utility for websites<br/>
 <br/>
 --How to install extension--<br/>
 1)Drag crx file onto your chrome extension page.<br/>
