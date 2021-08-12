@@ -2,7 +2,7 @@
 A discord rich presence utility for websites<br/><br/>
 Currently supported:<br/>
 Youtube, GeForce NOW (Web) and Xbox Cloud Gaming
-<br/>
+<br/><br/>
 --How to install extension--<br/>
 1. Drag crx file onto your chrome extension page.<br/>
 2. Wait for the extension to install.<br/>
