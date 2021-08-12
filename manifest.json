@@ -1,0 +1,13 @@
+{
+  "name": "OBC's RP Extension",
+  "description": "Browser extension for OBC's Discord Rich Presence",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": [
+      "activeTab",
+      "tabs"
+  ],
+  "background": {
+      "service_worker": "background.js"
+  }
+}
