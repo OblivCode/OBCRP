@@ -13,7 +13,7 @@ namespace app.modules
         private string current_details = "";
         public DiscordModule()
         {
-            discord_client = new DiscordRpcClient("750690488809422933");
+            discord_client = new DiscordRpcClient("//");
             discord_client.Initialize();
         }
 
