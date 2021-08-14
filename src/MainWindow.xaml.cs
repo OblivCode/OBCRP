@@ -284,11 +284,4 @@ namespace app
             public string url { get; set; }
         }
     }
-
-    public class User
-    {
-        public string Service { get; set; }
-
-        public bool Enabled { get; set; }
-    }
 }
