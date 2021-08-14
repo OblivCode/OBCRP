@@ -45,7 +45,7 @@ namespace app.modules
             }
             if (details == "Loading")
                 return;
-            discord.SetPresence(state, details, "xboxlogo");
+            discord.SetPresence(state, details, "//");
         }
 
         public void YTHandle(data_bundle bundle)
@@ -94,7 +94,7 @@ namespace app.modules
             }
             if (details == "Loading")
                 return;
-            discord.SetPresence(state, details, "yt");
+            discord.SetPresence(state, details, "//");
         }
 
         public void GNowHandle(data_bundle bundle)
@@ -114,7 +114,7 @@ namespace app.modules
             }
             else
                 return;
-            discord.SetPresence(state, details, "gnow");
+            discord.SetPresence(state, details, "//");
         }
 
         public void UnsupportedHandle() => discord.ClearPresence();
