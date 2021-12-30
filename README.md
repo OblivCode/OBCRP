@@ -5,7 +5,7 @@ A discord rich presence utility for websites<br/>
 <br/>
 Currently supported browsers:<br/>
 Opera, Opera GX
-(this does not necessarily mean other browsers won't work)
+(Other browsers that support crx extension files may work)
 <br/><br/>
 --How to launch--<br/>
 1. All you have to do is run 'launch.sh'
