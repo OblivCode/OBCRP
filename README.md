@@ -8,7 +8,7 @@ Opera, Opera GX
 (Other browsers that support crx extension files may work)
 <br/><br/>
 --How to launch--<br/>
-1. All you have to do is run 'launch.sh'
+1. All you have to do is run the launcher short cut
 <br/>
 --How to install extension--<br/>
 1. Drag crx file onto your browser's extension page.<br/>
