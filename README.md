@@ -9,6 +9,8 @@ Opera, Opera GX
 <br/><br/>
 --How to launch--<br/>
 1. All you have to do is run the launcher short cut
+--How to launch--<br/>
+1. Python (3.8+) must be installed.
 <br/>
 --How to install extension--<br/>
 1. Drag crx file onto your browser's extension page.<br/>
