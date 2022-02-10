@@ -8,7 +8,7 @@ Opera, Opera GX
 (Other browsers that support crx extension files may work)
 <br/><br/>
 --How to launch--<br/>
-1. All you have to do is run the launcher short cut
+1. All you have to do is run the launcher short cut<br/><br/>
 --How to launch--<br/>
 1. Python (3.8+) must be installed.
 <br/>
