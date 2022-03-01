@@ -22,6 +22,7 @@ All you have to do is run the launcher
 # Adding custom services
 - Add a handler<br/>
 In services.py, add your own handler which accepts a dictionary as a parameter. The dictionary will contain two keys: 'title' and 'url', which belongs to the user's current open tab.<br/>
-In function: MainHandler, at the end, put the custom service's name through service check then if true, call your handler.<br/>
+In MainHandler, at the end, put the custom service's name through service check then if true, call your handler.<br/>
+-Add service name to list<br/>
 In app.py, add the custom service's name to services_list.<br/>
 If the custom service doesn't use .com then you'll have to replace the url in the service check function. See how twich url is replaced as help.
