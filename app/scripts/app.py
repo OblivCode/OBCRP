@@ -1,15 +1,17 @@
+from os import name
 from PyQt6.QtCore import *
 from PyQt6.QtGui import *
 from PyQt6.QtWidgets import *
 from queue import Queue
 from windows import MainWindow
 from modules import services
-import sys, websockets, asyncio, threading, time, signal
+import sys, websockets, asyncio, threading, time, signal, socket
 
 services_list = [
-    'YouTube', 'GeForce Now', 'Twitch', 'SoloLearn'
+    'YouTube', 'GeForce Now', 'Twitch', 'SoloLearn', 'GitHub'
 ]
-
+HOST = 'localhost'
+PORT = 800
 def UI():
     app = QApplication(sys.argv)
 
@@ -24,8 +26,9 @@ def UI():
     listener_thread = threading.Thread(target=Listener, name='Listener Thread', args=(jsonQ,))
     check_thread = threading.Thread(target=Check, name='Check Thread', args=(checkedQ, window.get_checked))
     services_thread = threading.Thread(target=services.MainHandler, name='Services Thread', args=(jsonQ, checkedQ))
-    
+
     listener_thread.start()
+
     check_thread.start()
     services_thread.start()
     
@@ -34,9 +37,6 @@ def UI():
 
 def Listener(jsonQ: Queue):
     asyncio.set_event_loop( asyncio.new_event_loop())
-
-    HOST = 'localhost'
-    PORT = 800
 
     async def handler(websocket, path):
         data = await websocket.recv()
@@ -52,6 +52,7 @@ def Listener(jsonQ: Queue):
                 await asyncio.Future()
         except:
             await ws()
+    
     asyncio.get_event_loop().run_until_complete(ws())
 
 def Check(checkedQ: Queue, check_func):

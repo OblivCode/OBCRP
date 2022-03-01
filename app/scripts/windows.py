@@ -2,12 +2,12 @@ from queue import Queue
 from PyQt6.QtGui import QAction
 from PyQt6.QtWidgets import *
 from PyQt6.QtCore import *
-import sys
+import sys,socket
 
 class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
-        self.setWindowTitle = 'Main Window'
+       
         self.setFixedSize(150,150)
         self.container = QWidget()
         self.containerLayout = QVBoxLayout()
@@ -66,8 +66,5 @@ class MainWindow(QMainWindow):
                 checked_list.append(w.text())
         return checked_list
     
-
-
-
-        
-
+    def close_window(self):
+        sys.exit(0)
