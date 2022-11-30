@@ -17,7 +17,7 @@ if not IsDiscordRunning():
     time.sleep(5)
 
 #
-RPC = Presence('750690488809422933')
+RPC = Presence('DISCORD APPLICATION ID')
 RPC.connect()
 
 def SetPresence(state: str, details: str, service:str, timer: bool = False):
